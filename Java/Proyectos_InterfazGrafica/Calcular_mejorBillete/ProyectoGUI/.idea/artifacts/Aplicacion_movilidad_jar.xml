@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Aplicacion_movilidad:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Aplicacion_movilidad_jar</output-path>
+    <root id="archive" name="Aplicacion_movilidad.jar">
+      <element id="module-output" name="Aplicacion_movilidad" />
+    </root>
+  </artifact>
+</component>

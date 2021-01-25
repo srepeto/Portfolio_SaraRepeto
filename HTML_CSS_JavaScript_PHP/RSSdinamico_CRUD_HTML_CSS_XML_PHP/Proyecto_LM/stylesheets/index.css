@@ -1,0 +1,55 @@
+input[type=button] {
+	cursor: pointer;
+	background-color: #eeeeee;
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eeeeee), color-stop(100%, #cccccc));
+	background-image: -webkit-linear-gradient(top, #eeeeee, #cccccc);
+	background-image: -moz-linear-gradient(top, #eeeeee, #cccccc);
+	background-image: -ms-linear-gradient(top, #eeeeee, #cccccc);
+	background-image: -o-linear-gradient(top, #eeeeee, #cccccc);
+	background-image: linear-gradient(top, #eeeeee, #cccccc);
+	border: 1px solid #ccc;
+	border-bottom: 1px solid #bbb;
+	border-radius: 3px;
+	color: #333;
+	font: bold 13px/1 "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+	padding: 8px 0;
+	text-align: center;
+	text-shadow: 0 1px 0 #eee;
+	width: 200px;
+	height: 40px;
+	margin-bottom: 30px;
+}
+input[type=image] {
+	margin-top: 15px;
+    height: 40%;
+	width: 40%;
+}
+
+article {
+	margin-top: 100px;
+	height: 220px;
+}
+
+.RSS {
+	margin-top: 50px;
+}
+
+#dcha {
+	margin-left: 670px;
+	margin-top: -140px;
+}
+#izq {
+	margin-top: 80px;
+	margin-left: 50px;
+}
+#central {
+	position: absolute;
+	margin-left: 350px;
+	margin-top: -160px;
+	width: 220px;
+	height: 220px;
+}
+#todo {
+	padding-top: 0.5px;
+	margin-left: 35px;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+		<link rel="stylesheet" href="stylesheets/main.css">
+		<link rel="stylesheet" href="stylesheets/formularios.css">
+		<title>Modificar noticias</title>
+	</head>
+	<body>
+		<header>
+			<h1 class="titulo">Gestión de un RSS dinámico</h1>
+		</header>
+		<main>
+			<article>
+				<form id="formulario" name="formulario" method="post" action="controlador.php" enctype="multipart/form-data">
+					<dl>
+						<dt><label for="id">ID:</label>
+							<input type="number" name="id" id="id" min="1" title="ID de la noticia" required/>
+						</dt>
+						<dt><label for="seccion">Sección:</label>
+							<select name="seccion" id="seccion" title="Debe elegir una sección" required>
+								<option value="deportes">Deportes</option>
+								<option value="cultura">Cultura</option>
+								<option value="ocio">Ocio</option>
+								<option value="tecnologia">Tecnología</option>
+							</select>
+						</dt>
+						<dt><label for="titulo">Título:</label>
+							<input type="text" name="titulo" id="titulo" title="Título de la noticia" required/>
+						</dt>
+						<dt><label for="autor">Autor:</label>
+							<input type="text" name="autor" id="autor" title="Autor de la noticia" required/>
+						</dt>
+						<dt><label for ="fecha">Fecha:</label>
+							<input type="date" name="fecha" id="fecha" title="Fecha de subida" required/>
+						</dt>
+						<dt><label for="hora">Hora:</label>
+							<input type="time" name="hora" id="hora" title="Hora de subida" required/>
+						</dt>
+						<dt><label for="noticia">Noticia:</label>
+							<input type="file" name="noticia" id="noticia" title="Suba la noticia en formato .html" accept=".html" required/>
+						</dt>
+						<dt><label></label>
+							<input type="submit" value="Modificar" title="Modificar noticia" name="modifica"/>
+						</dt>
+					</dl>
+				</form>
+			</article>
+		</main>
+		<input type="button" id="volver" onclick="window.location.href = 'index.html'" value="Página principal"/>
+	</body>
+</html>

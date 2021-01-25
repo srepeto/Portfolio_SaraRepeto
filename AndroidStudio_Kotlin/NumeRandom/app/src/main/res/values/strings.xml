@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">NumeRandom</string>
+    <string name="labelBotGenera">GENERA</string>
+    <string name="labelTope">Número Tope</string>
+</resources>

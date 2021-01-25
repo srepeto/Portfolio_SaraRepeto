@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Que Toca Pala Boca</string>
+    <string name="visua_plato">Serranito</string>
+    <string name="etiq_bdecid">¡ÉCHALO A SUERTES!</string>
+    <string name="etiq_bplato">AÑADE NUEVO</string>
+    <string name="etiq_teclea">Teclea plato...</string>
+</resources>

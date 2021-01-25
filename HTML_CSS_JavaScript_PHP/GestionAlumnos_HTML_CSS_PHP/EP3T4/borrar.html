@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+		<link rel="stylesheet" href="stylesheets/main.css">
+		<link rel="stylesheet" href="stylesheets/formularios.css">
+		<title>EP3T4 - Consultar alumno</title>
+	</head>
+
+	<body>
+
+		<header>
+			<h1 class="titulo">Gestión de datos de alumnos</h1>
+		</header>
+		<main>
+			<article>
+				<form name="formulario" id="formulario" method="post" action="controlador.php">
+
+					<dl>
+
+						<dt><label for="codigo">Introduce el código:</label>
+							<input type="number" name="codigo" id="codigo" min="1" title="Código de alumno" required/>
+						</dt>
+
+						<dt><label></label>
+							<input type="submit" value="Borrar" title="Borrar alumno" name="botonBorrar"/>
+						</dt>
+										
+					</dl>
+	
+				</form>	
+			</article>
+		</main>
+
+		<input type="button" id="volver" onclick="window.location.href = 'index.html'" value="Página principal" />
+
+	</body>
+</html>

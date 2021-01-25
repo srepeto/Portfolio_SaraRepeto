@@ -1,0 +1,15 @@
+#result {
+    margin-top: 50px;
+}
+
+img {
+    margin-top: 10px;
+    height: 50%;
+    width: 50%;
+}
+
+label {
+	display: inline-block;
+    width: 80px;
+    font-size: 15px;
+}

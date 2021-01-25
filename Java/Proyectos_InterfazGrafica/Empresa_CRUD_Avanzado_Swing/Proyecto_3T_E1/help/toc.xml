@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<toc version="1.0">
+   <tocitem text="Inicio" target="inicio">
+      <tocitem text="Gestión de empresas" target="gestion_empresas"/>
+      <tocitem text="Asignación de alumnos" target="asignacion_alumnos"/>
+      <tocitem text="Ficheros a BBDD" target="ficheros_bbdd"/>
+   </tocitem>
+</toc>

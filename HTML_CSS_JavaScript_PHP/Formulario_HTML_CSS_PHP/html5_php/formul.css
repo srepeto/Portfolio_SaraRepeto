@@ -1,0 +1,161 @@
+body {
+	background-image: url('fondo.png');
+}
+
+#todo {
+	margin: auto;
+	background-color: rgb(169, 211, 228);
+	width: 506px;
+	height: auto;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	padding-right: 10px;
+	padding-left: 40px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	font-family: Arial;
+	font-size: 15px;
+	color: black;
+}
+
+#cabecera {
+	color: white;
+	font-family: arial;
+	text-align: center;
+	width: 250px;
+	height: 65px;
+	background-color: rgb(63, 113, 133);
+	border: 2px solid rgb(63, 113, 133);
+	border-radius: 10px;
+	margin: 14px auto;
+	}
+
+.coment {
+	position: absolute;
+}
+
+#identSexo {
+	margin-left: 11px;
+}
+
+#identIdiomas {
+	margin-left: 175px;
+}
+
+label {
+	display: inline-block;
+	width: 170px;
+	font-size: 13px;
+	}
+
+span {
+	font-size: 13px;
+}
+	
+dt {
+	padding: 5px;
+}
+
+input {
+	outline : none;
+	height: 19px;
+	width: 230px;
+	border: none;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	padding: 5px 10px 5px 10px;
+}
+
+input[type=radio],[type=checkbox] {
+	border: none;
+	height: auto;
+	width: auto;
+	padding: auto;
+}
+
+input[type=submit] {
+	cursor: pointer;
+	border: none;
+	outline:none;
+	margin-top: 15px;
+	margin-right: 10px;
+	border-radius: 2px;
+	background-color: rgb(63, 113, 133);
+	color: rgb(255, 255, 255);
+	height: 30px;
+	width: 115px;
+	text-align: center;
+}
+
+input[type=reset] {
+	cursor: pointer;
+	outline:none;
+	margin-top: 15px;
+	margin-right: 10px;
+	border-radius: 2px;
+	height: 30px;
+	width: 115px;
+	text-align: center;
+	background-color: rgb(255, 255, 255);
+	color: rgb(25, 67, 83);
+	border: 1px dashed rgb(182, 0, 0);
+}
+
+.cuenta {
+	margin-left: 174px;
+}
+
+#dig1, #dig2 {
+	width: 40px;
+}
+
+#dig3 {
+	width: 20px;
+}
+
+#dig4 {
+	width: 93px;
+}
+
+#IBAN {
+	width: 150px;
+}
+
+#hora {
+	width: 105px;
+	background-color: white;
+}
+
+select {
+	cursor: pointer;
+	border: none;
+	outline: none;
+	width: 250px;
+	height: 30px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	padding: 5px 10px 5px 10px;
+}
+
+textarea {
+	margin-left: 175px;
+	border: none;
+	outline : none;
+	height: 100px;
+	width: 280px;
+	border-radius: 2px;
+}
+
+/*form input:required:valid:focus {
+	outline : none;
+	-moz-box-shadow: 0px 0px 3px rgb(0, 131, 87);
+	border:1px solid rgb(0, 131, 87);
+	-webkit-box-shadow: 0px 0px 3px rgb(0, 131, 87);
+}
+
+form input:required:invalid:focus{
+	outline: none;
+	-moz-box-shadow: 0px 0px 3px #FF0000;
+	border:1px solid #9D0000;
+	-webkit-box-shadow: 0px 0px 3px #FF0000;
+}*/

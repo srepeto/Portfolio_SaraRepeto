@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Puntuable_PEP2T-2:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Puntuable_PEP2T_2_jar</output-path>
+    <root id="archive" name="Puntuable_PEP2T-2.jar">
+      <element id="module-output" name="Puntuable_PEP2T-2" />
+    </root>
+  </artifact>
+</component>

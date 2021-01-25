@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+		<link rel="stylesheet" href="stylesheets/main.css">
+		<link rel="stylesheet" href="stylesheets/formularios.css">
+		<title>Borrar noticias</title>
+	</head>
+	<body>
+		<header>
+			<h1 class="titulo">Gestión de un RSS dinámico</h1>
+		</header>
+		<main>
+			<article>
+				<form id="formulario" name="formulario" method="post" action="controlador.php">
+					<dl>
+						<dt><label for="id">Introduce el ID:</label>
+							<input type="number" name="id" id="id" min="1" title="ID de la noticia" required/>
+						</dt>
+						<dt><label></label>
+							<input type="submit" value="Borrar" title="Borrar noticia" name="borra"/>
+						</dt>
+					</dl>
+				</form>
+			</article>
+		</main>
+		<input type="button" id="volver" onclick="window.location.href = 'index.html'" value="Página principal"/>
+	</body>
+</html>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss version="2.0">
+    <channel>
+        <title>Equipo1</title>
+        <link>http://equipo1rssdinamico.freevar.com/</link>
+        <description>RSS equipo 1 LDM</description>
+        <item>
+            <category>tecnologia</category>
+            <title>Se filtra el iPhone 12</title>
+            <author>David Martín</author>
+            <pubDate>2020-09-14, 16:00:00</pubDate>
+        </item>
+        <item>
+            <category>cultura</category>
+            <title>Benicàssim se queda sin FIB en 2020</title>
+            <author>MARÍA PITARCH</author>
+            <pubDate>2020-05-18, 19:29:00</pubDate>
+        </item>
+        <item>
+            <category>ocio</category>
+            <title>27 metros cuadrados de cómic en honor al ‘Guernica’</title>
+            <author>TEREIXA CONSTENLA</author>
+            <pubDate>2020-05-18, 19:18:00</pubDate>
+        </item>
+        <item>
+            <category>cultura</category>
+            <title>Muere el actor Michel Piccoli a los 94 años</title>
+            <author>SILVIA AYUSO</author>
+            <pubDate>2020-05-18, 19:18:00</pubDate>
+        </item>
+        <item>
+            <category>cultura</category>
+            <title>Muere el actor Michel Piccoli, uno de los grandes del cine francés</title>
+            <author>Juan Pedro Quiñonero</author>
+            <pubDate>2020-05-18, 18:03:00</pubDate>
+        </item>
+    </channel>
+</rss>

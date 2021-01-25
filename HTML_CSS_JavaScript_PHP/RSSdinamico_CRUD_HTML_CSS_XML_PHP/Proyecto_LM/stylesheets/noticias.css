@@ -1,0 +1,24 @@
+article {
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+#detalles {
+	margin: 8px 0 8px 0;
+	font-size: 13px;
+}
+#imagen {
+	width: 100%;
+	float: left;
+    position: relative;
+	margin: 20px 0 30px 0;
+}
+#imagen img {
+	width: 50%;
+	display: block;
+    position: relative;
+    left: 25%;
+}
+.titulitos {
+	font-size: 20px;
+	font-weight: bold;
+}

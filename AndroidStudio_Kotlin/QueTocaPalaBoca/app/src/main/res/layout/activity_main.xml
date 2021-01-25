@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/botDecidir"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="435dp"
+        android:layout_height="52dp"
+        android:background="@color/colorPrimary"
+        android:fontFamily="@font/muli_bold"
+        android:text="@string/etiq_bdecid"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/botPlato"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="212dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="88dp"
+        android:background="@color/colorPrimary"
+        android:fontFamily="@font/muli_bold"
+        android:text="@string/etiq_bplato"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/botDecidir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/cajaNuevo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:autofillHints="@string/etiq_teclea"
+        android:ems="10"
+        android:hint="@string/etiq_teclea"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/botPlato"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/quesepedira"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.924"
+        app:srcCompat="@drawable/dd_logo" />
+
+    <TextView
+        android:id="@+id/quesepedira"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="156dp"
+        android:fontFamily="@font/muli_bold"
+        android:text="@string/visua_plato"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/cajaNuevo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

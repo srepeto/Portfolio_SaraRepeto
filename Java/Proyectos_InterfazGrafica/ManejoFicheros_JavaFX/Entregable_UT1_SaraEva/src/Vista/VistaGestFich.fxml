@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlador.Controller">
+   <children>
+      <Pane fx:id="paneCabecera" prefHeight="67.0" prefWidth="600.0">
+         <children>
+            <Separator layoutY="48.0" prefHeight="6.0" prefWidth="600.0" />
+            <Label layoutX="21.0" layoutY="18.0" prefWidth="267.0" text="PROGRAMA GESTIÓN DE FICHEROS DE TEXTO" textFill="#008d81">
+               <font>
+                  <Font name="Calibri" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane fx:id="paneGestion" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Button fx:id="botBorrar" layoutX="471.0" layoutY="87.0" mnemonicParsing="false" onAction="#accionBorrar" prefHeight="25.0" prefWidth="104.0" text="Borrar Fichero" />
+            <Button fx:id="botSelFich" layoutX="26.0" layoutY="87.0" mnemonicParsing="false" onAction="#accionSelFich" text="Seleccionar fichero" />
+            <Button fx:id="botCifrar" layoutX="471.0" layoutY="123.0" mnemonicParsing="false" onAction="#accionCifrar" prefHeight="25.0" prefWidth="104.0" text="Cifrar Fichero" />
+            <Button fx:id="botCopia" layoutX="471.0" layoutY="160.0" mnemonicParsing="false" onAction="#accionPaneCopiar" prefHeight="25.0" prefWidth="104.0" text="Realizar copia" />
+            <TextField fx:id="fieldRutaFich" editable="false" layoutX="157.0" layoutY="87.0" prefHeight="25.0" prefWidth="275.0" />
+            <Button fx:id="botVerCont" layoutX="471.0" layoutY="231.0" mnemonicParsing="false" onAction="#accionVerCont" prefHeight="25.0" prefWidth="104.0" text="Ver contenido" />
+            <Button fx:id="botINFO" layoutX="471.0" layoutY="196.0" mnemonicParsing="false" onAction="#accionMostrarINFO" prefHeight="25.0" prefWidth="104.0" text="Mostrar INFO" />
+            <Button fx:id="botEditCont" layoutX="471.0" layoutY="265.0" mnemonicParsing="false" onAction="#accionEditarCont" prefHeight="25.0" prefWidth="104.0" text="Editar contenido" />
+            <Button fx:id="botGuardar" disable="true" layoutX="321.0" layoutY="136.0" mnemonicParsing="false" onAction="#accionGuardar" prefHeight="25.0" prefWidth="111.0" text="Guardar cambios" visible="false" />
+            <Button fx:id="botContPal" layoutX="471.0" layoutY="299.0" mnemonicParsing="false" onAction="#accionContPalabras" prefHeight="25.0" prefWidth="104.0" text="Contar palabras" />
+            <Button fx:id="botContVoc" layoutX="471.0" layoutY="333.0" mnemonicParsing="false" onAction="#accionContVocales" prefHeight="25.0" prefWidth="104.0" text="Contar vocales" />
+            <TextArea fx:id="areaTexto" editable="false" layoutX="26.0" layoutY="182.0" prefHeight="176.0" prefWidth="407.0" />
+            <Button fx:id="botPaneCrear" layoutX="343.0" layoutY="13.0" mnemonicParsing="false" onAction="#accionPaneCrear" prefHeight="25.0" prefWidth="232.0" text="Crear nuevo fichero" />
+            <Label fx:id="etiGuia" layoutX="26.0" layoutY="140.0" text="Selecciona el fichero y elige la acción a realizar" textFill="#002473" />
+            <Label fx:id="etiError" layoutX="26.0" layoutY="140.0" text="Mensajes de error" textFill="#bc0000" visible="false" />
+            <Label fx:id="etiConfirm" layoutX="26.0" layoutY="140.0" text="Mensajes de confirmación" textFill="#008d05" visible="false" />
+         </children>
+      </Pane>
+      <Pane fx:id="paneNuevoFich" disable="true" prefHeight="400.0" prefWidth="600.0" visible="false">
+         <children>
+            <Button fx:id="botUbicacion" layoutX="26.0" layoutY="143.0" mnemonicParsing="false" onAction="#accionSelUbic" text="Seleccionar ubicación" />
+            <TextField fx:id="fieldRutaUbic" layoutX="171.0" layoutY="143.0" prefHeight="25.0" prefWidth="275.0" />
+            <Label fx:id="etiNuevoError" layoutX="26.0" layoutY="260.0" text="Error al crear el fichero. Compruebe si los datos están introducidos correctamente." textFill="#bc0000" visible="false" />
+            <Label fx:id="etiNuevoConfirm" layoutX="26.0" layoutY="260.0" text="Fichero creado con éxito" textFill="#008d05" visible="false" />
+            <Label layoutX="26.0" layoutY="101.0" text="Nombre" />
+            <TextField fx:id="fieldNombre" layoutX="97.0" layoutY="97.0" prefHeight="25.0" prefWidth="161.0" />
+            <Button fx:id="botNuevoFich" layoutX="26.0" layoutY="201.0" mnemonicParsing="false" onAction="#accionCrearFich" prefHeight="25.0" prefWidth="232.0" text="Crear nuevo fichero" />
+            <Button fx:id="botVolver" layoutX="385.0" layoutY="346.0" mnemonicParsing="false" onAction="#accionVolver" prefHeight="25.0" prefWidth="178.0" text="Volver a gestión de ficheros" />
+            <Label layoutX="451.0" layoutY="17.0" text="Creación de fichero">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane fx:id="paneNuevoFichCF" disable="true" layoutX="10.0" layoutY="10.0" prefHeight="400.0" prefWidth="600.0" visible="false">
+         <children>
+            <Button fx:id="botUbicacionCF" layoutX="26.0" layoutY="143.0" mnemonicParsing="false" onAction="#accionSelUbicCF" text="Seleccionar ubicación" />
+            <TextField fx:id="fieldRutaUbicCF" layoutX="171.0" layoutY="143.0" prefHeight="25.0" prefWidth="275.0" />
+            <Label fx:id="etiNuevoErrorCF" layoutX="26.0" layoutY="260.0" text="Error al copiar fichero" textFill="#bc0000" visible="false" />
+            <Label fx:id="etiNuevoConfirmCF" layoutX="26.0" layoutY="260.0" text="Fichero copiado con éxito" textFill="#008d05" visible="false" />
+            <Label layoutX="26.0" layoutY="101.0" text="Nombre" />
+            <TextField fx:id="fieldNombreCF" layoutX="97.0" layoutY="97.0" prefHeight="25.0" prefWidth="161.0" />
+            <Button fx:id="botNuevoFichCF" layoutX="26.0" layoutY="201.0" mnemonicParsing="false" onAction="#accionCopiarFich" prefHeight="25.0" prefWidth="232.0" text="Copiar Fichero" />
+            <Button fx:id="botVolverCF" layoutX="385.0" layoutY="346.0" mnemonicParsing="false" onAction="#accionVolverCF" prefHeight="25.0" prefWidth="178.0" text="Volver a gestión de ficheros" />
+            <Label layoutX="451.0" layoutY="7.0" text="Copiar fichero">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</Pane>

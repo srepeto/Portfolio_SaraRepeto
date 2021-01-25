@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>EP3T3_SaraRepeto</title>
+		<link rel="stylesheet" href="Valid_Total.css">
+	</head>
+    
+	<body>
+	
+		<div id="cabecera">
+			<h2>FORMULARIO</h2>
+		</div>
+
+		<div id="todo">
+			<form id="myForm" onsubmit="return validateForm(this)" METHOD="post" ACTION="mailto:atolon@fundacionsafa.es" enctype="text/plain" required> 
+			
+
+				<dl>
+				
+					<dt><label>DNI:</label>
+						<input type="text" id="DNI" name="DNI" placeholder="29477829R" title="Introduzca su DNI" />
+					</dt>
+
+					<dt><label>Nombre:</label>
+					<input type="text" id="nombre" name="Nombre" title="Rellene este campo con su nombre" />
+					</dt>
+					
+					<dt><label>Apellidos:</label>
+					<input type="text" id="apellidos" name="Apellidos" title="Rellene este campo con sus apellidos" />
+					</dt>
+
+					<dt><label>Fecha de nacimiento:</label>
+						<input type="text" id="fechaNac" name="Fecha de nacimiento" placeholder="dd/mm/yyyy" title="Indique la fecha de nacimiento" />
+					</dt>
+
+					<dt><label>Domicilio:</label>
+						<input type="text" id="domicilio" name="Domicilio" title="Domicilio en el que reside" />
+					</dt>
+
+					<dt><label>Código Postal:</label>
+						<input type="number" id="codPostal" name="Código Postal" placeholder="21005" title="Indique su Código Postal" />
+					</dt>
+
+					<dt><label>Provincia:</label>
+						<input type="text" id="provincia" name="Provincia" title="Indique la Provincia" />
+					</dt>
+
+					<dt><label>Teléfono:</label>
+						<input type="text" id="telefono" name="Teléfono" placeholder="956286147" title="Introduzca su número de teléfono" />
+					</dt>
+					
+					<dt><label>Correo Electrónico:</label>
+					<input type="text" id="email" name="Email" placeholder="etiqueta@dominio.es" title="Indique aquí su correo electrónico" />
+					</dt>
+
+					<dt><label>Sexo:</label>
+						<input type="radio" onchange="textoSexo()" id="hombre" name="sexo" value="hombre">
+						<span>Hombre</span>
+						<input type="radio" onchange="textoSexo()" id="mujer" name="sexo" value="mujer">
+						<span>Mujer</span>
+						<span id="identSexo"></span>
+					</dt>
+										
+					<dt><label>Estado Civil:</label>
+						<select id="estCivil" name="Estado civil" title="Debe elegir una de las siguientes opciones">			
+							<option value="soltero">Soltero</option>
+							<option value="casado">Casado</option>
+							<option value="divorciado">Divorciado</option>	
+							<option value="viudo">Viudo</option>		
+							<option value="arrejuntado">Arrejuntado</option>				
+						</select>
+					</dt>
+
+					<dt><label>Idiomas:</label>
+						<input type="checkbox" id="espanol" name="idiomas" value="español">
+						<span>Español</span>
+						<input type="checkbox" id="frances" name="idiomas" value="francés">
+						<span>Francés</span>
+						<input type="checkbox" id="ingles" name="idiomas" value="inglés">
+						<span>Inglés</span>
+						<input type="checkbox" id="aleman" name="idiomas" value="alemán">
+						<span>Aleman</span>
+					</dt>
+
+					<dt><span id="identIdiomas">Ha seleccionado: </span>
+						<span id="huecoEsp"></span>
+						<span id="huecoFran"></span>
+						<span id="huecoIng"></span>
+						<span id="huecoAle"></span>
+					</dt>
+					
+
+					<dt><label class="coment">Comentarios personales:</label>
+						<textarea type="text" name="Comentario" title="Escriba su comentario" id="comentario"></textarea>
+					</dt>
+
+					<dt><label>Cuenta corriente:</label>
+						<input type="text" id="dig1" name="Banco" title="Introduzca los 4 primeros dígitos" />
+						<input type="text" id="dig2" name="Sucursal" title="Introduzca los siguientes 4 dígitos" />
+						<input type="text" id="dig3" name="Dígitos de control" title="Introduzca los siguientes 2 dígitos" />
+						<input type="text" id="dig4" name="Número de cuenta" title="Introduzca los siguientes 10 dígitos" />
+					</dt>
+
+					<div class="cuenta">
+					<dt><input type="text" name="IBAN" id="IBAN" value="IBAN: " title="Aquí aparecerá su IBAN" readonly /></dt>
+					</div>
+
+					<dt><label>Hora del envío</label>
+						<input type="text" name="Hora del envío" title="Hora actual" id="hora" />
+					</dt>
+					
+					<dt><label></label>
+					<input type="submit" value="Enviar datos" title="Finalizar y enviar" id="envio" />
+					<input type="reset" onclick="resetear()" value="Resetear" title="Resetear los campos" />
+					</dt>
+				
+				</dl>
+
+			</form>	
+		</div>
+
+		<script type="text/javascript" src="Valid_Total.js"></script>
+
+  	</body>
+    
+</html>

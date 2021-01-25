@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+		<link rel="stylesheet" href="stylesheets/main.css">
+		<link rel="stylesheet" href="stylesheets/index.css">
+		<title>Gestión de un RSS dinámico</title>
+	</head>
+	<body>
+		<header>
+			<h1 class="titulo">Gestión de un RSS dinámico</h1>
+		</header>
+		<main>
+			<form method="post" action="generaRss.php">
+				<article>
+					<div id="todo">
+						<div id="izq">
+							<input type="button" onclick="window.location.href = 'introducir.html'" value="Introducir noticias" />
+							<br/>
+							<input type="button" onclick="window.location.href = 'consultar.html'" value="Consultar noticias" />
+						</div>
+						<div id="central">
+							<label>Número de noticias:</label>
+								<select id="numNot" name="numNot" title="Debe elegir una de las siguientes opciones">
+									<option value="5">5</option>
+									<option value="6">6</option>
+									<option value="7">7</option>
+									<option value="8">8</option>
+									<option value="9">9</option>
+									<option value="10">10</option>
+								</select>
+							<input type="image" src="images/feed.png" title="Consultar RSS" name="RSS"/>
+						</div>
+						<div id="dcha">
+							<input type="button" onclick="window.location.href = 'modificar.html'" value="Modificar noticias" />
+							<br/>
+							<input type="button" onclick="window.location.href = 'borrar.html'" value="Borrar noticias" />
+						</div>
+					</div>
+				</article>
+			</form>
+		</main>
+	</body>
+</html>

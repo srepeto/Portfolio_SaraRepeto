@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+		<link rel="stylesheet" href="stylesheets/main.css">
+		<link rel="stylesheet" href="stylesheets/formularios.css">
+		<title>EP3T4 - Modificar alumno</title>
+	</head>
+
+	<body>
+
+		<header>
+			<h1 class="titulo">Gestión de datos de alumnos</h1>
+		</header>
+		<main>
+			<article>
+				<form name="formulario" id="formulario" method="post" action="controlador.php" enctype='multipart/form-data'>
+					<dl>
+						<dt><label for="codigo">Código:</label>
+							<input type="number" name="codigo" id="codigo" min="1" title="Código de alumno" required/>
+						</dt>
+						<dt><label for="nombre">Nombre:</label>
+						<input type="text" name="nombre" id="nombre" title="Nombre de alumno" required/>
+						</dt>
+						<dt><label for="apellidos">Apellidos:</label>
+							<input type="text" name="apellidos" id="apellidos" title="Apellidos de alumno" required/>
+						</dt>
+						<dt><label for="foto">Foto:</label>
+							<input type="file" name="foto" id="foto" title="Suba la imagen en formato .jpg" accept=".jpg" required/>
+						</dt>
+						<dt><label></label>
+							<input type="submit" value="Modificar" title="Modificar alumno" name="botonModif"/>
+						</dt>
+					</dl>
+				</form>
+			</article>
+		</main>
+
+		<input type="button" id="volver" onclick="window.location.href = 'index.html'" value="Página principal" />
+
+	</body>
+</html>
